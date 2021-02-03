@@ -1,0 +1,24 @@
+.but {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 320px;
+    height: 80px;
+    background-color: hsl(10, 100%, 50%);
+    border: none;
+    font-size: 2.3em;
+    color: white;
+    font-family: "Montserrat";
+    border-bottom: 7px solid hsl(10, 100%, 50%);
+    padding-top: 5px;
+    transition: background-color 2s .5s ease-in-out;
+    
+}
+
+.btn:hover {
+    background-color: hsl(40, 100%, 50%);
+}

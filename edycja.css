@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* reset marginesów i dopełnień */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* sc12ho jest do zdjecia kostki 12x12 */
+.sc12ho {
+    max-height: 500px;
+    max-width: 300px;
+    margin: 10 10 10 10;
+    border-radius: 10% 20%;
+}
+
+body {
+    background-image:url(win10%20photo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: bisque;
+    
+}
+
+#tlo {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: bisque;
+
+}
+
+.dk {
+    max-height: 1000px;
+}
+
+header img {
+    max-width: 99%;
+    height: auto;
+    margin: 0% 0.5% 0% 0.5%;
+    border-radius: 40% 30% 40% 30%;
+    
+}
+
+nav {
+    overflow: hidden;
+    /* overflow ukrywa pemne elementy które wychodzą poza dozwoloną strefe, oraz daje rozmiar np. dla menu */
+}
+
+nav a {
+    display: block;
+    width: 25%;
+    float: left;
+    /* float odpowiada za dostawianie elenentow obok siebie gdy jest puste miejsce */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: blue;
+    padding: 15px 30px;
+    transition: all 0.6s ease;
+    
+}
+
+/* hover służy do interakcji po najechaniu na dany element */
+a.menu:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.active {
+    background-color: crimson;
+}
+
+article {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+article h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 10% 20px 10%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid crimson;
+}
+
+img.left {
+    float: left;
+    margin: 0px 10px 10px 0;
+    width: 25%;
+    border-radius: 50% 30%;
+}
+
+article p{
+    text-align: justify;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 15px 0 15px 0;
+}
+
+/* rek to reklama, napisy ruchome */
+/* #rek {
+    max-width: 1000px;
+    margin: 0 0 0 30%;
+    background-color: bisque;
+} */
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    height: 40px;
+    background-color: darkcyan;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#reklama {
+    margin: 0 0 0 0;
+    background-color: bisque;
+}
+
+/* lewarek i prawanap jest to prawy i lewy element kontenera w wraperze */
+#lewarek {
+    float:left;
+    width:50%;
+    background-color:bisque;
+}
+
+#prawanap {
+    float:left;
+    width:50%;
+    background-color:lightgreen;
+}
+
+
+#dziecko3 {
+    clear:both;
+    background-color:bisque;
+}
+
+@media (max-width:800px) {
+    nav a {
+        width: 50%;
+        font-size: 16px;
+    }
+    h1 {font-size: 40px;
+    }
+}
+
+@media (max-width:500px) {
+    nav a {
+        width: 100%;
+    }
+}
